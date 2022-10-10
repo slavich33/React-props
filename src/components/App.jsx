@@ -1,27 +1,7 @@
 import React from "react";
 import contacts from "../contacts.js";
-
-function Heading() {
-  return (
-    <div>
-      <h1 className="heading">My Contacts</h1>
-    </div>
-  );
-}
-function Card(props) {
-  return (
-    <div className="card">
-      <div className="top">
-        <h2 className="name">{props.name}</h2>
-        <img className="circle-img" src={props.img} alt="avatar_img" />
-      </div>
-      <div className="bottom">
-        <p>{props.tel}</p>
-        <p>{props.mail}</p>
-      </div>
-    </div>
-  );
-}
+import Card from "./Card";
+import Heading from "./Heading";
 
 function App(props) {
   return (
@@ -50,4 +30,3 @@ function App(props) {
 }
 
 export default App;
-export { Heading };
